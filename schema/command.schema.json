@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Flip custom command export",
+  "type": "object",
+  "required": ["commands"],
+  "properties": {
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "kind", "script"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "kind": { "enum": ["action", "toggle", "choice"] },
+          "script": { "type": "string", "minLength": 1 },
+          "confirmBeforeRun": { "type": "boolean" },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "title"],
+              "properties": {
+                "id": { "type": "string" },
+                "title": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
