@@ -1,6 +1,6 @@
 # Flip Scripts
 
-Community-maintained custom command scripts for [Flip](https://gamepunk.github.io/Flip/).
+Community-maintained custom command scripts for [Flip](https://tenonstudio.github.io/apps/flip/).
 
 > **Warning**  
 > Flip custom commands run shell scripts with your user permissions. Review every script before importing it. Never run scripts that ask for your password, tokens, cookies, or unrelated files.
